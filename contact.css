@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container strong{
+    margin-left: 15px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    background: azure;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-section img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.form-section {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/*subscribe card*/
+.subscribe-card{
+    background-color: rgb(197, 239, 247);
+    display: flex;
+}
+.subscribe-card img{
+    height: 253px;
+}
+.btn:hover{
+    background-color: azure;
+    color: black;
+}
+
+/* Recipes */
+.recipes {
+    text-align: center;
+    padding: 40px 0;
+}
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.recipe-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer p{
+    width: 40%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+}

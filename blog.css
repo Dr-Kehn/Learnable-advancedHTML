@@ -1,0 +1,181 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+.navbar {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container strong{
+    margin-left: 15px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Social Icons */
+.social-icons img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.author-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Questions Section */
+.questions{
+    display: flex;
+}
+.questions h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.questions img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 40px;
+    margin: 50px 0;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-card{
+    background-color: rgb(197, 239, 247);
+    display: flex;
+}
+.subscribe-card img{
+    height: 253px;
+}
+.btn:hover{
+    background-color: azure;
+    color: black;
+}
+
+/* Recipes */
+.recipe-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    width: 200px;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer p{
+    width: 40%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recipe-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}

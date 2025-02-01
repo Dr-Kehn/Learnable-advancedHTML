@@ -1,0 +1,318 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container strong{
+    margin-left: 15px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.hero .container{
+    background-color: rgb(214, 236, 243);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-text {
+    width: 50%;
+}
+.hero .image{
+    width: 50%;
+}
+.hero-image img {
+    width: 100%;
+    max-height: 500px;
+}
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 40px 0;
+}
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.category-item {
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+/* Recipes */
+.recipes {
+    text-align: center;
+    padding: 40px 0;
+}
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.recipe-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+/*Learn More*/
+.learn-more{
+    display: flex;
+    height: 400px;
+    background-color: azure;
+    width: 100%;
+}
+.learn-text{
+    align-content: center;
+}
+.learn-more p, a{
+    margin-top: 18%;
+    margin-left: 10px;
+}
+.learn-more img{
+    height: 400px;
+}
+.instagram-text{
+    display: grid;
+    justify-content: center;
+}
+.instagram-text h2{
+    display: grid;
+    justify-content: center;
+}
+.instagram-posts{
+    justify-content: space-between;
+    display: flex;
+    overflow-x: auto;
+}
+.instagram-button{
+    display: flex;
+    justify-content: center;
+}
+/*subscribe card*/
+.subscribe-card{
+    background-color: rgb(197, 239, 247);
+    display: flex;
+}
+.subscribe-card img{
+    height: 253px;
+}
+.btn:hover{
+    background-color: azure;
+    color: black;
+}
+/* Footer */
+.footer {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer p{
+    width: 40%;
+}
+/* Responsive */
+
+/*Mobile S view*/
+
+@media (width: 320px){
+    /*body*/
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Container */
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+   /* Navbar */
+.navbar {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container strong{
+    margin-left: 15px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    align-items: center;
+    padding: 3px 0;
+    width: 100%;
+}
+.hero .container{
+    background-color: rgb(214, 236, 243);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-text {
+    width: 50%;
+}
+.hero .image{
+    width: 50%;
+}
+.hero-image img {
+    width: 100%;
+    max-height: 500px;
+}
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 40px 0;
+}
+.category-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.category-item{
+    width: 200px;
+    height: 200px;
+}
+}
+
+/*Mobile M view*/
+
+@media (width: 375px){
+
+}
+
+/*Mobile L view*/
+
+@media (width:425px){
+
+
+/*Tablet view*/
+
+@media (width:768px){
+
+
+
+/*Laptop L view*/
+
+@media (width :1440px){
+
+}
+}
+}
+
+/*Tablet view*/
+@media(width: 768px){
+
+}
+
+/*Laptop L view*/
+@media(width: 1440px){
+
+}
+/*4k tv*/
+@media (max-width: 2560px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+}
